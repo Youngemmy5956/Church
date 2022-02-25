@@ -1,0 +1,940 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    overflow-x: hidden
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    z-index: 1;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 20;
+}
+.logo-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
+.navbar{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container{
+    display: none;
+}
+.menu-list{
+    display: none;
+    overflow-x: hidden;
+}
+.navlist{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    list-style-type: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.tab a{
+    text-decoration: none;
+    font-family: varela round;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: black;
+    margin-left: 20px;
+}
+.tab a:hover{
+    color: #03a9f4;
+}
+.landpage{
+    background-image: url(../images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+.landpage::after{
+    position: absolute;
+    top: 0;
+    background:rgb(80, 80, 80);
+    width: 100%;
+    height: 100%;
+    content: "";
+    mix-blend-mode: overlay;
+}
+
+.login-container{
+    width:40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-btn{
+    width: 200px;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid #03a9f4;
+    color: #03a9f4;
+    font-family: poppins;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.contact-btn:hover{
+    background-color: #03a9f4;
+    color: white;
+    transition: .5s ease-in-out;
+}
+.landpage-text-container{
+    height: 100%;
+    backdrop-filter: blur(5px);
+    padding: 130px 40px 130px 100px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.landpage-text-container p{
+    text-align: left;
+    padding-left: 0%;
+}
+.landpage h1,h3,p{
+    color: white;
+    text-transform: capitalize;
+}
+
+.landpage h1{
+    font-family: poppins;
+}
+.landpage h3{
+    text-transform: uppercase;
+}
+.landpage-btn-container{
+    width: 50%;
+    padding: 20px 0px 20px 0px ;
+    position: relative;
+}
+
+
+.learn-more-btn{
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-family: varela round;
+    color: #fff;
+    width: 200px;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+   }
+   
+   .learn-more-btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .learn-more-btn:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   .learn-more-btn:hover::before {
+    filter: blur(20px);
+   }
+   
+   .learn-more-btn:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#7e0ddb,#03a9f4);
+   }
+   .word-of-god-section{
+       padding: 40px 0px 40px 0px;
+       width: 100%;
+       background-color: rgb(226, 241, 253);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .word-of-god-text-container{
+        padding: 20px 0px 20px 10px;
+        width: 60%;
+   }
+   .word-of-god-text-container h1{
+       text-transform: capitalize;
+       font-family: poppins;
+       font-size: 2rem;
+       width: 80%;
+       text-align: center;
+   }
+   .word-of-god-text-container p{
+       color: black;
+       text-align: center;
+       width: 80%;
+   }
+   .podcast-container{
+       width: 90%;
+       height: 350px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin: auto;
+       background-color: black;
+   }
+   .podcast-img-card{
+       background-image: url(../images/podcast.jpeg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       height: 100%;
+       width: 55%; 
+    }
+    .podcast-img-card h1{
+        color: white;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-family: poppins;
+        width: 50%;
+    }
+    .podcast-img-card h1,p{
+        margin-right: auto;
+        padding: 0px 10px 0px 20px;
+    }
+    .explore-btn-container{
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .explore{
+        padding: 0px;
+        width: 160px;
+    }
+    .explore{
+        text-decoration: none;
+        /* position: absolute; */
+        border: none;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        font-family: varela round;
+        color: #fff;
+        width: 200px;
+        height: 3em;
+        line-height: 2em;
+        text-align: center;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 300%;
+        border-radius: 30px;
+        z-index: 1;
+       }
+       
+       .explore:hover {
+        animation: ani 8s linear infinite;
+        border: none;
+       }
+       
+       @keyframes ani {
+        0% {
+         background-position: 0%;
+        }
+       
+        100% {
+         background-position: 400%;
+        }
+       }
+       
+       .explore:before {
+        content: '';
+        /* position: absolute; */
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 35px;
+        transition: 1s;
+       }
+       .explore:hover::before {
+        filter: blur(20px);
+       }
+       
+       .explore:active {
+        background: linear-gradient(32deg,#03a9f4,#f441a5,#7e0ddb,#03a9f4);
+       }
+    .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+   }
+   .verse-of-the-day{
+       width: 40%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       background-color: white;
+       height: 100%;
+   }
+   .verse-of-the-day h1{
+       font-size: 1.5rem;
+       font-family: poppins;
+       text-align: center;
+   }
+   .verse-of-the-day p{
+    text-align: center;
+    color: black;
+    width: 90%;
+   }
+   .carousel-item{
+       margin-bottom: 20px;
+       height: auto;
+   }
+   
+   .right-arrow{
+       height: 50px;
+       width: 50px;
+       object-fit: contain;
+   }
+   .lead-with-love-section{
+       width: 100%;
+       padding: 40px 0px 40px 0px;
+       background: rgb(226, 241, 253);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .lead-with-love-text{
+       width: 90%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .lead-with-love-text h1{
+    color: black;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: poppins;
+    width: 50%;
+    text-align: center;
+   }
+   .lead-with-love-text p{
+       width: 70%;
+       text-align: center;
+       color: black;
+       margin: auto;
+   }
+   .leaders-card-container{
+       padding: 100px 0px 150px 0px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 90%;
+   }
+   .leader-card{
+       width: 400px ;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 10px;
+   }
+   .leader-card img{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       border-radius: 20px;
+       align-self: flex-start;
+   }
+   .bigger{
+       width: 500px;
+       height: 550px;
+       margin-bottom: -200px;
+      
+   }
+   .bigger img{
+    object-fit: cover;
+   }
+   .position-label{
+       width: 100%;
+       background-color: #03a9f4;
+       height: 10%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 10px;
+   }
+   .position-label p{
+       color: white;
+       font-family: poppins;
+       text-align: center;
+       font-size: 1.5rem;
+   }
+   .worship-with-us-text{
+       margin: auto;
+       padding: 60px 0px 20px 0px;
+   }
+   .worship-with-us-text h1{
+       font-size: 1.8rem;
+       font-family: poppins;
+       text-align: center;
+       width: 50%;
+       margin: auto;
+   }
+   .worship-with-us-text p{
+       margin: auto;
+       width: 70%;
+       text-align: center;
+       color: black;
+   }
+   .weekly-announcement-section{
+       padding: 20px 0px 40px 0px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 90%;
+       margin: auto;
+   }
+   .announcement-text{
+       width: 30%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       background-color: white;
+       box-shadow: 0px 0px 10px rgb(149, 149, 149);
+       height: 400px;
+       padding: 0px 40px 0px 20px;
+       overflow-y: scroll;
+       object-fit: contain;
+       max-height: auto;
+   }
+   
+   
+   .announcement-header{
+       font-size: 1.5rem;
+       margin: auto;
+       text-transform: capitalize;
+       font-family: poppins;
+       text-align: center;
+       padding: 40px 0px 20px 0px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: bold;
+       letter-spacing: 1px;
+   }
+   .announcement-text h3{
+       color: black;
+       font-size: 1.2rem;
+       text-transform: uppercase;
+       font-family: varela round;
+       width: 100%;
+       font-weight: bold;
+       text-transform: uppercase;
+   }
+   .announcement-text p{
+       color: black;
+       width: 100%;
+       padding: 0%;
+   }
+   .blue-text{
+    color: #03a9f4;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+   .announcement-img{
+       width: 70%;
+       object-fit: cover;
+       height: 400px;
+   }
+   .event-details{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.date-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px 5px 0px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.calender{
+    height: 40px;
+    width: 40px;
+}
+
+.date-container p{
+    font-size: .9rem;
+    margin: auto;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 10px 0px;
+}
+.social-media p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media a{
+    height: 100%;
+}
+.foot1{
+    width: 30%;
+}
+
+.foot1 h2{
+    color: white;
+    font-family: poppins;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #03a9f4;
+    width: 180px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.foot1 p{
+    line-height: 25px;
+    font-family: roboto;
+    color: white;
+    font-size: 1.1rem;
+}
+.social-media-handle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+    width: 100%;
+    padding: 10px;
+    align-self: flex-start;
+    background-color: white;
+    margin-top: 30px;
+}
+.social-icon{
+   height: 50%;
+   width: 10%;
+    object-fit: contain;
+}
+.foot1 li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0;
+}
+.foot1 a{
+    color: white;
+    width: 80%;
+    text-decoration: none;
+    font-family: varela round;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    text-indent: 20px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-family: varela round;
+    font-size: 1.2rem;
+}
+.my-img{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+footer{
+    background:black ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+@media (max-width:1024px) and (min-width:768px) {
+    .login-container{
+        display: none;
+    }
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: black;
+        margin: 3px;
+    }
+    .navbar{
+        width: 0%;
+        overflow-x: hidden;
+    }
+    
+    .menu-list{
+        width: 0%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background:rgba(0, 0, 0, 0.897);
+        height: 100%;
+        z-index: 100;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+        z-index: 200;
+    }
+    
+    .list-items{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 60%;   
+    }
+    .menu-list li{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid rgba(17, 16, 16, 0.794);
+        padding-bottom: 10px;
+    }
+   
+    .menu-list a{
+        display: flex;
+        /* background-color: red; */
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: ubuntu;
+    }
+    .arrow{
+        width: 5%;
+        margin-left: auto;
+        max-height: 80%;
+        object-fit: contain;
+    }
+    .menu-list-login{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 40%;
+        overflow-x: hidden;
+        background-color: rgba(0, 0, 0, 0.897);
+        padding: 10px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+    .blue-btn-container{
+        display: block;
+    }
+    .announcement-text{
+        width: 50%;
+    }
+    .announcement-img{
+        width: 50%;
+    }
+    .foot1{
+        width: 80%;
+        margin-top: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px){
+    .login-container{
+        display: none;
+    }
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+     
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: black;
+        margin: 3px;
+    }
+    .navbar{
+        width: 0%;
+        overflow-x: hidden;
+    }
+    .search-container{
+        display: none;
+    }
+    .menu-list{
+        width: 0%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background:rgba(0, 0, 0, 0.897);
+        height: 100%;
+        z-index: 100;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+        z-index: 200;
+    }
+    
+    .list-items{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 60%;
+       
+    }
+    .menu-list li{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid rgba(17, 16, 16, 0.794);
+        padding-bottom: 10px;
+    }
+   
+    .menu-list a{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: ubuntu;
+    }
+    .arrow{
+        width: 5%;
+        margin-left: auto;
+        max-height: 80%;
+        object-fit: contain;
+    }
+    .menu-list-login{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 40%;
+        overflow-x: hidden;
+        background-color: rgba(0, 0, 0, 0.897);
+        padding: 10px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .navbar{
+        display: none;
+    }
+    .landpage-text-container{
+        padding-left:30px ;
+    }
+    .podcast-container{
+        flex-direction: column;
+        padding: 0%;
+        height: auto;
+        background-color: transparent;
+    }
+    .word-of-god-section{
+        padding: 0px;
+        height: auto;
+    }
+    .leaders-card-container{
+        flex-direction: column;
+    }
+    .bigger{
+        margin: 0%;
+    }
+    .word-of-god-text-container{
+        padding: 20px 10px 20px 10px;
+        width: 100%;
+        margin: auto;
+   }
+   .word-of-god-text-container h1{
+       margin: auto;
+   }
+   .word-of-god-text-container p{
+       margin: auto;
+   }
+   .podcast-img-card{
+       width: 100%; 
+   }
+   .overlay{
+       padding: 20px;
+   }
+   .overlay h1{
+    padding: 20px 0px 0px 20px;
+    width: 100%;
+    font-size: 1.5rem;
+   }
+   .my-explore{
+       position: static;
+   }
+   .verse-of-the-day{
+       width: 100%;
+       padding: 20px 10px 10px 20px;
+   }
+   .lead-with-love-text p, .lead-with-love-text h1{
+    width: 90%;
+   }
+   .bigger, .leader-card{
+       width: 90%;
+       height: 400px;
+   }
+   .leaders-card-container{
+       padding-bottom: 20px;
+   }
+   .worship-with-us-text{
+       padding: 20px 0px 0px 20px;
+   }
+   .worship-with-us-text p, .worship-with-us-text h1{
+        width: 90%;
+        padding-bottom: 10px;
+   }
+   .weekly-announcement-section{
+       flex-direction: column-reverse;
+   }
+   .announcement-text{
+       width: 90%;
+       padding-top: 40px;
+   }
+   .announcement-img{
+       width: 90%;
+   }
+   .announcement-header{
+       width: 90%;
+   }
+   .foot1{
+    width: 80%;
+    margin-top: 20px;
+}
+footer{
+    flex-direction: column;
+}
+}

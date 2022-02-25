@@ -1,0 +1,192 @@
+header{
+    border-bottom:  2px solid rgb(235, 234, 234);
+}
+.about-podcast{
+    margin-top: 50px;
+}
+.announce-landpage{
+    margin: 30px 0px 20px 0px ;
+}
+.for-announcement-page{
+    flex-direction: row-reverse;
+    height: 100%;
+    background-color: white;
+}
+.about-podcast-card-container{
+    margin: auto;
+    height: 400px;
+    background: linear-gradient(180deg,#03a9f4 60%,rgb(172, 218, 248) 90%);
+    
+}
+.about-podcast-head{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 60px;
+}
+.line{
+    width: 120px;
+    height: 3px;
+    background-color: #03a9f4 ;
+    margin: auto;display: block;
+}
+.announce-card{
+    width: 50%;
+    height: 100%;   
+}
+.announce-land-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.podcast-text{
+    padding: 50px 10px 20px 30px;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    border-top:  2px solid #03a9f4;
+    border-bottom:  2px solid #03a9f4;
+}
+.podcast-text h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px 0px 20px 0px; 
+    line-height: 25px;
+}
+.podcast-text h2{
+    
+    width: 100%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: .9;
+    padding: 0px 0px 10px 0px;
+}
+.podcast-icon-container{
+    padding: 20px 0px 10px 0px;
+    align-items: flex-start;
+    width: 100%;
+}
+.all-announcement-section{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.announcement-header{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.announcement-header h1{
+    font-family: poppins ,Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.announcement-header p{
+    font-family: roboto ,sans-serif;
+    line-height: 25px;
+    width: 40%;
+}
+.all-announcement-card-container{
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.announcemnt-card{
+    background-color: #03a9f4;
+    padding: 10px 0px 0px 0px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+.announcemnt-card h1{
+    padding: 30px 20px 10px 20px ;
+    font-size: 1.5rem;
+    font-family: poppins;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: white;
+}
+.announcemnt-card p{
+    background-color: white;
+    padding: 20px 10px 20px 20px;
+    line-height: 25px;
+    font-family: roboto,sans-serif;
+    width: 100%;
+    font-size: 1rem;
+}
+.announcement-readmore{
+    background-color: white;
+    padding: 10px ;
+}
+@media (max-width:1024px) and (min-width:900px) {
+    .all-announcement-card-container{
+        width: 100%;
+    }
+    .podcast-card-container, .recent-postcast-header{
+        width: 100vw; 
+    }
+    .announcemnt-card p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:899px) {
+    
+    .about-podcast-card{
+        flex-direction: column;
+        height: auto;
+    }
+    .about-podcast-head{
+        width: 90%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+    .line{
+        margin: auto;
+    }
+    .about-podcast-card-container{
+        height: auto;
+        
+    }
+    .about-podcast{
+        width: 100vw;
+    }
+    .podcast-profile {
+        width: 100%;    
+    }
+    .announce-land-img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .podcast-text{
+        width: 100%;
+    }
+    
+    .podcast-text h1, .podcast-text h2, .podcast-text p{
+        width: 100%;
+    }
+    .all-announcement-card-container{
+        padding: 20px 0px 20px 0px ;
+    }
+    .all-announcement-card-container,.podcast-card-container{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .announcement-header p{
+        width: 80%;
+    }
+    .recent-podcard{
+        width: 95%;
+    }
+    .announcemnt-card{
+        margin-top: 30px;
+    }
+}
