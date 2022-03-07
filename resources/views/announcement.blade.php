@@ -13,7 +13,7 @@
     <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="../images/images__10_-removebg-preview.png" alt="" class="logo">
+            <img src="{{asset(data/images/images__10_-removebg-preview.png)}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -22,19 +22,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="../index.html" class="link">home</a>
+                    <a href="{{route("index")}}" class="link">home</a>
                 </li>
                 <li class="tab">
-                    <a href="./service.html" class="link">services</a>
+                    <a href="{{route("service")}}" class="link">services</a>
                 </li>
                 <li class="tab">
-                    <a href="./podcast.html" class="link">podcast</a>
+                    <a href="{{route("podcast")}}" class="link">podcast</a>
                 </li>
                 <li class="tab">
-                    <a href="./about.html" class="link">about</a>
+                    <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="./announcement.html" class="link">announcements</a>
+                    <a href="{{route("announcements")}}" class="link">announcements</a>
                 </li>
             </ul>
         </nav>
@@ -42,15 +42,15 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="../images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
             <ul class="list-items">
-                <li><a href="../index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-                 <li><a href="./contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                  <li><a href="./podcast.html">podcast  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./announcement.html">announcement  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./service.html">service <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
+                <li><a href="{{route("home")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+                 <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                  <li><a href="{{route("podcast")}}">podcast  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("announcement")}}">announcement  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("service")}}">service <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
@@ -61,7 +61,7 @@
             <div class="menu-line"></div>
         </div>
         <div class="login-container">
-            <a href="./contact.html" class="contact-btn">contact</a>
+            <a href="{{route("contact")}}" class="contact-btn">contact</a>
         </div>
     </header>
         <!-- this is the code for the hamburger menu in the mobile view -->
@@ -70,7 +70,7 @@
             <div class="about-podcast-card-container ">
                 <div class="about-podcast-card for-announcement-page">
                     <div class="podcast-profile announce-card">
-                        <img src="../images/congregation.jpeg" alt="" class="announce-land-img">
+                        <img src="{{asset('data/images/congregation.jpeg')}}" alt="" class="announce-land-img">
                     </div>
                     <div class="podcast-text">
                         <h2>praise the lord</h2>
@@ -82,9 +82,9 @@
                             Laudantium dolorum deserunt sunt eius suscipit magnam aliquid cupiditate?
                         </p>
                         <div class="podcast-icon-container">
-                            <a href="#"><img src="../images/black fb.png" alt="" class="icon"></a>
-                            <a href="#"><img src="../images/black twitter.png" alt="" class="icon"></a>
-                            <a href="#"><img src="../images/black mail.png" alt="" class="icon"></a>
+                            <a href="#"><img src="{{asset('data/images/black fb.png')}}" alt="" class="icon"></a>
+                            <a href="#"><img src="{{asset('data/images/black twitter.png')}}" alt="" class="icon"></a>
+                            <a href="#"><img src="{{asset('data/images/black mail.png')}}" alt="" class="icon"></a>
                         </div>
                         <div class="recent-podcast-icon-container">
                             <button class="learn-more">
@@ -163,7 +163,7 @@
             <div class="podcast-card-container">
                 <div class="recent-podcard">
                     <!-- <img src="../images/microphone-removebg-preview.png" alt="" class="micro-phone"> -->
-                    <img src="../images/reading girl.jpeg" alt="" class="recent-podcast-img">
+                    <img src="{{asset('data/images/reading girl.jpeg')}}" alt="" class="recent-podcast-img">
                     <div class="recent-podcast-body">
                         <h1>importance of god in us</h1>
                         <p>god is our father, who is in heaven, heprotects us from danger
@@ -181,7 +181,7 @@
                 </div>
                 <div class="recent-podcard">
                     <!-- <img src="../images/microphone-removebg-preview.png" alt="" class="micro-phone"> -->
-                    <img src="../images/relef.jpeg" alt="" class="recent-podcast-img">
+                    <img src="{{asset('data/images/relef.jpeg')}}" alt="" class="recent-podcast-img">
                     <div class="recent-podcast-body">
                         <h1>importance of god in us</h1>
                         <p>god is our father, who is in heaven, heprotects us from danger
@@ -199,7 +199,7 @@
                 </div>
                 <div class="recent-podcard">
                     <!-- <img src="../images/microphone-removebg-preview.png" alt="" class="micro-phone"> -->
-                    <img src="../images/nigerian map.jpeg" alt="" class="recent-podcast-img">
+                    <img src="{{asset('data/images/nigerian map.jpeg')}}" alt="" class="recent-podcast-img">
                     <div class="recent-podcast-body">
                         <h1>importance of god in us</h1>
                         <p>god is our father, who is in heaven, heprotects us from danger
@@ -245,11 +245,11 @@
                     </li>
                 </ul>
                 <div class="social-media-handle">
-                    <img src="../images/black fb.png" alt="" class="social-icon">
-                    <img src="../images/black insta.png" alt="" class="social-icon">
-                    <img src="../images/black mail.png" alt="" class="social-icon">
-                    <img src="../images/black twitter.png" alt="" class="social-icon">
-                    <img src="../images/black whatsapp.png" alt="" class="social-icon">
+                    <img src="{{asset('data/images/black fb.png')}}" alt="" class="social-icon">
+                    <img src="{{asset('data/images/black insta.png')}}" alt="" class="social-icon">
+                    <img src="{{asset('data/images/black mail.png')}}" alt="" class="social-icon">
+                    <img src="{{asset('data/images/black twitter.png')}}" alt="" class="social-icon">
+                    <img src="{{asset('data/images/black whatsapp.png')}}" alt="" class="social-icon">
                 </div>
             </div>
             <!-- 3rd division  -->
@@ -267,6 +267,6 @@
                 </form>
             </div>
         </footer>
-    <script src="../js files/main.js"></script>
+    <script src="{{asset(data/js/main.js)}}"></script>
 </body>
 </html>
