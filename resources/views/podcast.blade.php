@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>podcast</title>
-    <link rel="stylesheet" href="../css files/general.css">
-    <link rel="stylesheet" href="../css files/general.css">
-   
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+
 </head>
 <body>
     <!-- this is the header section that contains the logo and the navigation bars   -->
-    <header > 
+    <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="../images/images__10_-removebg-preview.png" alt="" class="logo">
+            <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -23,19 +23,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="../index.html" class="link">home</a>
+                    <a href="{{route("index")}}" class="link">home</a>
                 </li>
                 <li class="tab">
-                    <a href="./service.html" class="link">services</a>
+                    <a href="{{route("service")}}" class="link">services</a>
                 </li>
                 <li class="tab">
-                    <a href="./podcast.html" class="link">podcast</a>
+                    <a href="{{route("podcast")}}" class="link">podcast</a>
                 </li>
                 <li class="tab">
-                    <a href="./about.html" class="link">about</a>
+                    <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="./announcement.html" class="link">announcements</a>
+                    <a href="{{route("announcement")}}" class="link">announcements</a>
                 </li>
             </ul>
         </nav>
@@ -48,51 +48,51 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="../images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
             <ul class="list-items">
-                <li><a href="../index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-                 <li><a href="./contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>            
-                  <li><a href="./podcast.html">podcast  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./announcement.html">announcement  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./service.html">service <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
+                <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+                 <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                  <li><a href="{{route("podcast")}}">podcast  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("announcement")}}">announcement  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("service")}}">service <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
-        
-        
+
+
         <div class="login-container">
             <a href="./contact.html" class="contact-btn">contact</a>
         </div>
     </header>
-<!-- end of the header section --> 
+<!-- end of the header section -->
     <section class="podcast-landpage">
-        
+
         <div class="podcast-land-img-container">
             <div class="microphone-container for-landpage">
-                <img src="../images/mic2-removebg-preview.png" alt="" class="micro-phone">
+                <img src="{{asset('data/images/mic2-removebg-preview.png')}}" alt="" class="micro-phone">
             </div>
-            <img src="../images/preacher.jpeg" alt="" class="podcast-land-img">
+            <img src="{{asset('data/images/preacher.jpeg')}}" alt="" class="podcast-land-img">
         </div>
         <div class="audio-section">
             <h1>audio:how to create a good relationship with god</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat enim, mollitia suscipit soluta debitis consequuntur ex! Fugiat quos ab eos, 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat enim, mollitia suscipit soluta debitis consequuntur ex! Fugiat quos ab eos,
                 pariatur facere ipsa! Expedita enim ipsam nobis quisquam et est!
             </p>
             <div class="audio-container">
-                <audio src="../images/ka-anyi-na-ayo.mp3" controls></audio>
+                <audio src="{{asset('data/images/ka-anyi-na-ayo.mp3')}}" controls></audio>
                 <div class="social-media">
-                    <p>watch video version on:</p> <a href="#"><img src="../images/fb.png" alt="" class="icon"></a>
-                    <a href="#"><img src="../images/youtube.png" alt="" class="icon"></a>
+                    <p>watch video version on:</p> <a href="#"><img src="{{asset('data/images/fb.png')}}" alt="" class="icon"></a>
+                    <a href="#"><img src="{{asset('data/images/youtube.png')}}" alt="" class="icon"></a>
                 </div>
             </div>
         </div>
     </section>
     <section class="about-podcast">
         <h1 class="about-podcast-head">about the podcast <br><span class="line"></span></h1>
-        <p class="podcast-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse 
-            dicta distinctio accusantium modi consequatur quidem? Repudiandae alias 
+        <p class="podcast-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse
+            dicta distinctio accusantium modi consequatur quidem? Repudiandae alias
             voluptate aperiam, ipsum nam recusandae aliquam quos! Quaerat at suscipit
              doloribus doloremque odio,
              blanditiis sit, quasi perspiciatis a culpa harum minima voluptate!
@@ -100,19 +100,19 @@
         <div class="about-podcast-card-container">
             <div class="about-podcast-card">
                 <div class="podcast-profile">
-                    <img src="../images/pastor5.png" alt="" class="podcast-profile-img">
+                    <img src="{{asset("data/images/pastor5.png")}}" alt="" class="podcast-profile-img">
                     <h1>pastor E.A adeboye</h1>
                     <p class="podcast-date">8th august 2022</p>
                     <div class="podcast-icon-container">
-                        <a href="#"><img src="../images/black fb.png" alt="" class="icon"></a>
-                        <a href="#"><img src="../images/black twitter.png" alt="" class="icon"></a>
-                        <a href="#"><img src="../images/black mail.png" alt="" class="icon"></a>
+                        <a href="#"><img src="{{asset("data/images/black fb.png")}}" alt="" class="icon"></a>
+                        <a href="#"><img src="{{asset("data/images/black twitter.png")}}" alt="" class="icon"></a>
+                        <a href="#"><img src="{{asset("data/images/black mail.png")}}" alt="" class="icon"></a>
                     </div>
                 </div>
                 <p class="podcast-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur,
                      maxime sunt earum, eligendi tempore distinctio, officia doloribus molestiae debitis
-                     necessitatibus. 
+                     necessitatibus.
                     Laudantium dolorum deserunt sunt eius suscipit magnam aliquid cupiditate?
                 </p>
             </div>
@@ -126,9 +126,9 @@
         <div class="podcast-card-container">
             <div class="recent-podcard">
                 <div class="microphone-container">
-                    <img src="../images/mic2-removebg-preview.png" alt="" class="micro-phone">
+                    <img src="{{asset('data/images/mic2-removebg-preview.png')}}" alt="" class="micro-phone">
                 </div>
-                <img src="../images/preacher.jpeg" alt="" class="recent-podcast-img">
+                <img src="{{asset('data/images/preacher.jpeg')}}" alt="" class="recent-podcast-img">
                 <div class="recent-podcast-body">
                     <h1>importance of god in us</h1>
                     <p>god is our father, who is in heaven, heprotects us from danger
@@ -142,15 +142,15 @@
                                 </span>
                                 <span class="button-text">Learn More</span>
                               </button>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="recent-podcard">
                 <div class="microphone-container">
-                    <img src="../images/mic2-removebg-preview.png" alt="" class="micro-phone">
+                    <img src="{{asset('data/images/mic2-removebg-preview.png')}}" alt="" class="micro-phone">
                 </div>
-                <img src="../images/preacher2.jpeg" alt="" class="recent-podcast-img">
+                <img src="{{asset('data/images/preacher2.jpeg')}}" alt="" class="recent-podcast-img">
                 <div class="recent-podcast-body">
                     <h1>importance of god in us</h1>
                     <p>god is our father, who is in heaven, heprotects us from danger
@@ -164,15 +164,15 @@
                                 </span>
                                 <span class="button-text">Learn More</span>
                               </button>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="recent-podcard">
                 <div class="microphone-container">
-                    <img src="../images/mic2-removebg-preview.png" alt="" class="micro-phone">
+                    <img src="{{asset('data/images/mic2-removebg-preview.png')}}" alt="" class="micro-phone">
                 </div>
-                <img src="../images/pastor3.jpeg" alt="" class="recent-podcast-img">
+                <img src="{{asset('data/images/pastor3.jpeg')}}" alt="" class="recent-podcast-img">
                 <div class="recent-podcast-body">
                     <h1>importance of god in us</h1>
                     <p>god is our father, who is in heaven, heprotects us from danger
@@ -186,8 +186,8 @@
                                 </span>
                                 <span class="button-text">Learn More</span>
                               </button>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,7 +201,7 @@
             <li > <a href="#"  class="foot-1-links">www.google.com</a></li>
             <li ><a href="#"  class="foot-1-links">+234 7042244539</a></li>
         </div>
-       
+
         <!-- second division  -->
         <div class="foot1">
             <h2>useful links</h2>
@@ -220,11 +220,11 @@
                 </li>
             </ul>
             <div class="social-media-handle">
-                <img src="../images/black fb.png" alt="" class="social-icon">
-                <img src="../images/black insta.png" alt="" class="social-icon">
-                <img src="../images/black mail.png" alt="" class="social-icon">
-                <img src="../images/black twitter.png" alt="" class="social-icon">
-                <img src="../images/black whatsapp.png" alt="" class="social-icon">
+                <img src="{{asset('data/images/black fb.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black insta.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black mail.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black twitter.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black whatsapp.png')}}" alt="" class="social-icon">
             </div>
         </div>
         <!-- 3rd division  -->
@@ -242,6 +242,6 @@
             </form>
         </div>
     </footer>
-    <script src="../js files/main.js"></script>
+    <script src=".{{asset('data/js/main.js')}}"></script>
 </body>
 </html>
