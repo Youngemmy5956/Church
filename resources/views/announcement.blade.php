@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>announcement</title>
-    <link rel="stylesheet" href="../css files/general.css">
-    <link rel="stylesheet" href="../css files/announcement.css">
+    <link rel="stylesheet" href="{{asset(data/css/general.css)}}">
+    <link rel="stylesheet" href="{{asset(data/css/announcement.css)}}">
 </head>
 <body>
     <!-- this is the header section that contains the logo and the navigation bars   -->
-    <header > 
+    <header >
         <!-- this is the logo container -->
         <div class="logo-container">
             <img src="../images/images__10_-removebg-preview.png" alt="" class="logo">
@@ -46,7 +46,7 @@
             </div>
             <ul class="list-items">
                 <li><a href="../index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-                 <li><a href="./contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>            
+                 <li><a href="./contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
                   <li><a href="./podcast.html">podcast  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
                  <li><a href="./about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
                  <li><a href="./announcement.html">announcement  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
@@ -78,7 +78,7 @@
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur,
                             maxime sunt earum, eligendi tempore distinctio, officia doloribus molestiae debitis
-                            necessitatibus. 
+                            necessitatibus.
                             Laudantium dolorum deserunt sunt eius suscipit magnam aliquid cupiditate?
                         </p>
                         <div class="podcast-icon-container">
@@ -93,7 +93,7 @@
                                 </span>
                                 <span class="button-text">Learn More</span>
                               </button>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,8 +109,8 @@
                <div class="announcemnt-card">
                    <h1>our weekly announcement</h1>
                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Ex illo maxime explicabo, rem architecto odit provident, 
-                        obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem 
+                        Ex illo maxime explicabo, rem architecto odit provident,
+                        obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem
                         et error, asperiores esse pariatur.
                     </p>
                     <div class="recent-podcast-icon-container  announcement-readmore">
@@ -120,13 +120,13 @@
                             </span>
                             <span class="button-text">Learn More</span>
                           </button>
-                    </div> 
+                    </div>
                </div>
                <div class="announcemnt-card">
                 <h1>our weekly announcement</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Ex illo maxime explicabo, rem architecto odit provident, 
-                     obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem 
+                     Ex illo maxime explicabo, rem architecto odit provident,
+                     obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem
                      et error, asperiores esse pariatur.
                  </p>
                  <div class="recent-podcast-icon-container announcement-readmore">
@@ -136,13 +136,13 @@
                          </span>
                          <span class="button-text">Learn More</span>
                        </button>
-                 </div> 
+                 </div>
             </div>
             <div class="announcemnt-card">
                 <h1>our weekly announcement</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Ex illo maxime explicabo, rem architecto odit provident, 
-                     obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem 
+                     Ex illo maxime explicabo, rem architecto odit provident,
+                     obcaecati nobis omnis distinctio molestiae repudiandae dignissimos exercitationem
                      et error, asperiores esse pariatur.
                  </p>
                  <div class="recent-podcast-icon-container  announcement-readmore">
@@ -152,7 +152,7 @@
                          </span>
                          <span class="button-text">Learn More</span>
                        </button>
-                 </div> 
+                 </div>
             </div>
             </div>
         </section>
@@ -168,7 +168,7 @@
                         <h1>importance of god in us</h1>
                         <p>god is our father, who is in heaven, heprotects us from danger
                             Lorem ipsum dolor sit amet consectetur.
-                        </p>  
+                        </p>
                             <div class="recent-podcast-icon-container">
                                 <button class="learn-more">
                                     <span class="circle" aria-hidden="true">
@@ -176,7 +176,7 @@
                                     </span>
                                     <span class="button-text">Learn More</span>
                                   </button>
-                            </div> 
+                            </div>
                     </div>
                 </div>
                 <div class="recent-podcard">
@@ -194,7 +194,7 @@
                                     </span>
                                     <span class="button-text">Learn More</span>
                                   </button>
-                            </div> 
+                            </div>
                     </div>
                 </div>
                 <div class="recent-podcard">
@@ -212,7 +212,7 @@
                                     </span>
                                     <span class="button-text">Learn More</span>
                                   </button>
-                            </div> 
+                            </div>
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
             <li > <a href="#"  class="foot-1-links">www.google.com</a></li>
             <li ><a href="#"  class="foot-1-links">+234 7042244539</a></li>
             </div>
-           
+
             <!-- second division  -->
             <div class="foot1">
                 <h2>useful links</h2>
@@ -253,7 +253,7 @@
                 </div>
             </div>
             <!-- 3rd division  -->
-    
+
             <div class="foot1">
                 <p>
                 <h2>newsletter</h2>
