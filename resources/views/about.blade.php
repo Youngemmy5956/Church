@@ -35,7 +35,7 @@
                     <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="{{route("announcements")}}" class="link">announcements</a>
+                    <a href="{{route("announcement")}}" class="link">announcements</a>
                 </li>
             </ul>
         </nav>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css files/bootstrap.min.css">
-    <link rel="stylesheet" href="./css files/style.css">
+    <link rel="stylesheet" href="{{asset('data/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/style.css')}}">
     <title>homepage</title>
 </head>
     <!-- this is the header section that contains the logo and the navigation bars   -->
-    <header > 
+    <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="./images/images__10_-removebg-preview.png" alt="" class="logo">
+            <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -21,19 +21,19 @@
             <ul class="navlist">
                 <li class="tab">
                     <!-- these are the navbar links to different pages -->
-                    <a href="./index.html" class="link">home</a>
+                    <a href="{{route("index")}}" class="link">home</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/podcast.html" class="link">podcast</a>
+                    <a href="{{route("podcast")}}" class="link">podcast</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/about.html" class="link">about</a>
+                    <a href="{{route("about")}}" class="link">about</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/service.html" class="link">service</a>
+                    <a href="{{route("service")}}" class="link">service</a>
                 </li>
                 <li class="tab">
-                    <a href="./html files/announcement.html" class="link">annoncements</a>
+                    <a href="{{route("announcement")}}" class="link">annoncements</a>
                 </li>
             </ul>
         </nav>
@@ -41,15 +41,15 @@
 
         <div class="menu-list" id="menu-items">
             <div class="menu-list-login">
-                 <img src="./images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                 <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
             <ul class="list-items">
-                <li><a href="./index.html">home <img src="./images/arrow-24-xxl.png" alt="" class="arrow"> </a ></li>
-                 <li><a href="./html files/contact.html">contact  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>            
-                  <li><a href="./html files/podcast.html">podcast  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./html files/about.html">about <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./html files/announcement.html">announcement  <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
-                 <li><a href="./html files/service.html">service <img src="./images/arrow-24-xxl.png" alt="" class="arrow"></a></li>
+                <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+                 <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                  <li><a href="{{route("podcast")}}">podcast  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("announcement")}}">announcement  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
+                 <li><a href="{{route("service")}}">service <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
              </ul>
         </div>
         <!-- this is the code for the hamburger menu in the mobile view -->
@@ -58,12 +58,12 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
         </div>
-        
+
         <div class="login-container">
-            <a href="./html files/contact.html" class="contact-btn">contact</a>
+            <a href="{{route("contact")}}" class="contact-btn">contact</a>
         </div>
     </header>
-<!-- end of the header section --> 
+<!-- end of the header section -->
 
 <body>
     <section class="landpage">
@@ -78,7 +78,7 @@
                 <button class="learn-more-btn"> learn more
                 </button>
             </div>
-        </div>  
+        </div>
     </section>
 
     <!-- this is the word of god section  -->
@@ -86,7 +86,7 @@
         <!-- this contains the word of god text  -->
         <div class="word-of-god-text-container">
             <h1>start everyday with the word of god</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci explicabo laudantium, fugiat quidem ducimus eum.
             </p>
         </div>
@@ -103,7 +103,7 @@
                         <!-- explore btn  -->
                         <button class="explore"> explore
                         </button>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <!-- this contains the carousel  -->
@@ -118,8 +118,8 @@
                       <div class="carousel-item active">
                           <!-- this is where the text in the carousel comes  -->
                         <h1>we lead with love</h1>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod laudantium necessitatibus ipsum molestiae? 
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod laudantium necessitatibus ipsum molestiae?
                             Modi quisquam nesciunt sed autem repellendus nulla.
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, temporibus?
                         </P>
@@ -127,8 +127,8 @@
                       <div class="carousel-item">
                           <!-- this is where the text in the carousel comes  -->
                         <h1>we lead with love</h1>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod laudantium necessitatibus ipsum molestiae? 
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod laudantium necessitatibus ipsum molestiae?
                             Modi quisquam nesciunt sed autem repellendus nulla.
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, porro.
                         </P>
@@ -136,8 +136,8 @@
                       <div class="carousel-item">
                           <!-- this is where the text in the carousel comes  -->
                         <h1>we lead with love</h1>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quod laudantium necessitatibus ipsum molestiae? 
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod laudantium necessitatibus ipsum molestiae?
                             Modi quisquam nesciunt sed autem repellendus nulla.
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, accusantium!
                         </P>
@@ -160,8 +160,8 @@
         <!-- its text  -->
         <div class="lead-with-love-text">
             <h1>we lead with love</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod laudantium necessitatibus ipsum molestiae? 
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod laudantium necessitatibus ipsum molestiae?
                 Modi quisquam nesciunt sed autem repellendus nulla.
             </P>
         </div>
@@ -173,18 +173,18 @@
             </div>
             <!-- 2 -->
             <div class="leader-card bigger">
-                <img src="./images/happy-diverse-business-people-making-deal_53876-159561.jpg" alt="">
-                
+                <img src="{{asset('data/images/happy-diverse-business-people-making-deal_53876-159561.jpg')}}" alt="">
+
             </div>
             <!-- 3 -->
             <div class="leader-card">
-                <img src="./images/pastor6.png" alt="">
+                <img src="{{asset('data/images/pastor6.png')}}" alt="">
             </div>
         </div>
         <!-- this is the worshio with us text  -->
         <div class="worship-with-us-text">
             <h1>worship with us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Minus laudantium quos tenetur non illo et culpa cum impedit consequatur eum!
             </p>
         </div>
@@ -196,34 +196,34 @@
        <div class="announcement-text">
             <h4 class="blue-text">announcement</h4>
             <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias repellat similique aspernatur laboriosam beatae?
             </p>
             <div class="event-details">
                 <!-- date of event comes here  -->
                 <div class="date-container">
-                    <p>Date:23rd november 2022</p><img src="./images/calender2-removebg-preview (1).png" alt="" class="icon calender">
+                    <p>Date:23rd november 2022</p><img src="{{asset('data/images/calender2-removebg-preview (1).png')}}" alt="" class="icon calender">
                 </div>
                 <!-- some social media icons here  -->
                 <div class="social-media">
-                    <p>follow us on :</p> <a href="#"><img src="./images/fb.png" alt="" class="icon"></a>
-                    <a href="#"><img src="./images/youtube.png" alt="" class="icon"></a>
+                    <p>follow us on :</p> <a href="#"><img src="{{asset('data/images/fb.png')}}" alt="" class="icon"></a>
+                    <a href="#"><img src="{{asset('data/images/youtube.png')}}" alt="" class="icon"></a>
                 </div>
             </div>
         </div>
         <!-- the announcement img here  -->
-        <img src="./images/announce.jpeg" alt="" class="announcement-img">
+        <img src="{{asset('data/images/announce.jpeg')}}" alt="" class="announcement-img">
     </section>
     <!-- footer section -->
     <footer>
         <!-- first division -->
         <div class="foot1">
             <h2>contact me</h2>
-            <li ><img src="./images/right-arrow.png" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
-            <li ><img src="./images/right-arrow.png" alt=""class="my-img"> <a href="#">www.google.com</a></li>
-            <li ><img src="./images/right-arrow.png" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
+            <li ><img src="{{asset('data/images/right-arrow.png')}}" alt=""class="my-img"> <a href="#">@emmanula/twitter.com</a></li>
+            <li ><img src="{{asset('data/images/right-arrow.png')}}" alt=""class="my-img"> <a href="#">www.google.com</a></li>
+            <li ><img src="{{asset('data/images/right-arrow.png')}}" alt=""class="my-img"> <a href="#">+234 7042244539</a></li>
         </div>
-       
+
         <!-- second division  -->
         <div class="foot1">
             <h2>useful links</h2>
@@ -242,11 +242,11 @@
                 </li>
             </ul>
             <div class="social-media-handle">
-                <img src="./images/black fb.png" alt="" class="social-icon">
-                <img src="./images/black insta.png" alt="" class="social-icon">
-                <img src="./images/black mail.png" alt="" class="social-icon">
-                <img src="./images/black twitter.png" alt="" class="social-icon">
-                <img src="./images/black whatsapp.png" alt="" class="social-icon">
+                <img src="{{asset('data/images/black fb.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black insta.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black mail.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black twitter.png')}}" alt="" class="social-icon">
+                <img src="{{asset('data/images/black whatsapp.png')}}" alt="" class="social-icon">
             </div>
         </div>
         <!-- 3rd division  -->
@@ -260,7 +260,7 @@
             <input type="email" name="" id="" placeholder="enter your email" class="input">
         </div>
     </footer>
-    <script src="./js files/main.js"></script>
-    <script src="./js files/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('data/js/main.js')}}"></script>
+    <script src="{{asset('data/js/bootstrap.bundle.min.js')}}"></script>
 </body>
 </html>
