@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>announcement</title>
-    <link rel="stylesheet" href="{{asset(data/css/general.css)}}">
-    <link rel="stylesheet" href="{{asset(data/css/announcement.css)}}">
+    <link rel="stylesheet" href="{{asset('data/css/general.css')}}">
+    <link rel="stylesheet" href="{{asset('data/css/announcement.css')}}">
 </head>
 <body>
     <!-- this is the header section that contains the logo and the navigation bars   -->
     <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="{{asset(data/images/images__10_-removebg-preview.png)}}" alt="" class="logo">
+            <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -45,7 +45,7 @@
                  <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
             </div>
             <ul class="list-items">
-                <li><a href="{{route("home")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
+                <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
                  <li><a href="{{route("contact")}}">contact  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
                   <li><a href="{{route("podcast")}}">podcast  <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
                  <li><a href="{{route("about")}}">about <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"></a></li>
@@ -267,6 +267,6 @@
                 </form>
             </div>
         </footer>
-    <script src="{{asset(data/js/main.js)}}"></script>
+    <script src="{{asset('data/js/main.js')}}"></script>
 </body>
 </html>

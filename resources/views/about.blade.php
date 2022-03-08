@@ -148,7 +148,7 @@
             </div>
             <!-- this is the help card 2 -->
             <div class="help-card">
-                <img src="{{asset(data/images/images__10_-removebg-preview.png)}}" alt="" class="help-img">
+                <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="help-img">
                 <h1>be your brother's keeper</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
                     quasi unde nobis nam ratione! Aspernatur
@@ -195,7 +195,7 @@
             </li>
         </ul>
         <div class="social-media-handle">
-            <img src="{{aset('data/images/black fb.png')}}" alt="" class="social-icon">
+            <img src="{{asset('data/images/black fb.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/black insta.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/black mail.png')}}" alt="" class="social-icon">
             <img src="{{asset('data/images/black twitter.png')}}" alt="" class="social-icon">
@@ -217,6 +217,6 @@
         </form>
     </div>
 </footer>
-<script src="{{asset(data/js/main.js)}}"></script>
+<script src="{{asset('data/js/main.js')}}"></script>
 </body>
 </html>

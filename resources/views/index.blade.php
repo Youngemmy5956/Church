@@ -169,7 +169,7 @@
         <div class="leaders-card-container">
             <!-- this is the pastors image card 1 -->
             <div class="leader-card">
-                <img src="./images/pastor5.png" alt="">
+                <img src="{{asset('data/images/pastor5.png')}}" alt="">
             </div>
             <!-- 2 -->
             <div class="leader-card bigger">
