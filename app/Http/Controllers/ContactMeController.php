@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\ContactMe;
+use Illuminate\Support\Facades\Mail;
+
 
 use Illuminate\Http\Request;
 
@@ -13,7 +16,11 @@ class ContactMeController extends Controller
      */
     public function index()
     {
-        //
+
+        {
+            return view("contact");
+        }
+
     }
 
     /**
@@ -34,7 +41,30 @@ class ContactMeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        {
+            $data =  $this->validate($request, [
+                "name" => "required|string",
+                "email" => "required|string",
+                "subject" => "nullable|string",
+                "message" => "required|string",
+            ]);
+
+            //  Store data in database
+            ContactMeController::create($data);
+            //  Send mail to admin
+            Mail::send('mail', array(
+                'name' => $request->name,
+                'email' => $request->email,
+                'subject' => $request->subject,
+                'messages' => $request->message,
+            ), function ($message) use ($request) {
+                $message->from($request->email);
+                $message->to('emmanuelgodwin558@gmail.com', 'Admin')->subject($request->get('subject'));
+            });
+
+
+            return redirect()->route('contacts.index')->with('success', 'We have received your message and would like to thank you for writing to us.');
+        }
     }
 
     /**
