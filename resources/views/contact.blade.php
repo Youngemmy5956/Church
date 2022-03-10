@@ -88,12 +88,8 @@
                 <form action="{{route('contact.store')}}" method="post" class="comment-form">
                     @csrf
 
-
-                    <label for="#name-input">Enter Name</label>
                 <input type="text" placeholder="input your name"{{ old('name')}} name="name" class="contact-input" id="">
 
-
-                <label for="#email-input">Enter Subject</label>
                 <input type="text" placeholder="enter Subject" {{ old('subject')}} name="subject" class="contact-input">
 
 
