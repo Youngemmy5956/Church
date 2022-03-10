@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Contact;
 use App\Models\ContactMe;
 use Illuminate\Support\Facades\Mail;
 
@@ -41,6 +43,7 @@ class ContactMeController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         {
             $data =  $this->validate($request, [
                 "name" => "required|string",
@@ -50,7 +53,7 @@ class ContactMeController extends Controller
             ]);
 
             //  Store data in database
-            ContactMeController::create($data);
+            Contact::create($data);
             //  Send mail to admin
             Mail::send('mail', array(
                 'name' => $request->name,
@@ -63,7 +66,7 @@ class ContactMeController extends Controller
             });
 
 
-            return redirect()->route('contacts.index')->with('success', 'We have received your message and would like to thank you for writing to us.');
+            return redirect()->route('contact')->with('success', 'We have received your message and would like to thank you for writing to us.');
         }
     }
 

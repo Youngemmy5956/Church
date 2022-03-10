@@ -47,7 +47,7 @@
 
             <div class="menu-list" id="menu-items">
                 <div class="menu-list-login">
-                     <img src="../images/1193.png" alt=""  id="close-sidebar" class="close-btn">
+                     <img src="{{asset('data/images/1193.png')}}" alt=""  id="close-sidebar" class="close-btn">
                 </div>
              <ul class="list-items">
                 <li><a href="{{route("index")}}">home <img src="{{asset('data/images/arrow-24-xxl.png')}}" alt="" class="arrow"> </a ></li>
@@ -76,11 +76,40 @@
                      Recusandae maxime magnam dolor vitae ipsa accusamus deleniti assumenda nulla ea officia?
                 </p>
                <!-- this is the contact us form  -->
-                <form action="" class="comment-form">
-                    <input type="email" name="" id="" placeholder="enter your email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="your text goes here">
 
+
+               @if(session('success'))
+               <div class="alert alert-success">
+                 {{ session('success') }}
+               </div>
+               @endif
+
+
+                <form action="{{route('contact.store')}}" method="post" class="comment-form">
+                    @csrf
+
+
+                    <label for="#name-input">Enter Name</label>
+                <input type="text" placeholder="input your name"{{ old('name')}} name="name" class="contact-input" id="">
+
+
+                <label for="#email-input">Enter Subject</label>
+                <input type="text" placeholder="enter Subject" {{ old('subject')}} name="subject" class="contact-input">
+
+
+                    <input type="email" name="email" id="" placeholder="enter your email" {{ old('email')}} class="contact-input" id="email-input" required>
+
+
+                    <textarea name="message" id="text-area" cols="30" {{old("message")}} rows="10" class="text-area" placeholder="your text goes here">
                     </textarea>
+
+                    @if ($errors->has('message'))
+                    <div class="error">
+                       {{ $errors->first('message') }}
+                    </div>
+                    @endif
+
+
                     <button class="send-btn">
                         <div class="svg-wrapper-1">
                           <div class="svg-wrapper">

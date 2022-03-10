@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactMeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -24,8 +25,13 @@ Route::get('/', function () {
 
 Route::get("/index", [HomeController::class, "index"])->name("index");
 Route::get("/contact", [HomeController::class, "contact"])->name("contact");
+Route::post("/contact/store", [ContactMeController::class, "store"])->name("contact.store");
 Route::get("/about", [HomeController::class, "about"])->name("about");
 Route::get("/podcast", [HomeController::class, "podcast"])->name("podcast");
 Route::get("/service", [HomeController::class, "service"])->name("service");
 Route::get("/announcement", [HomeController::class, "announcement"])->name("announcement");
+
+
+// Route::resource("contacts", ContactController::class);
+
 
