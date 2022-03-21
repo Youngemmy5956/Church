@@ -14,7 +14,7 @@
     <header >
         <!-- this is the logo container -->
         <div class="logo-container">
-            <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="logo">
+            <img src="{{asset('data/images/Frame.png')}}" alt="" class="logo">
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
@@ -71,8 +71,8 @@
 <!-- this section is the about landpage  -->
 <section class="service-landpage landpage-card">
     <div class="announcement-card">
-            <h2>about us</h2>
-            <h1>christ embassador and miracle ministry</h1>
+            {{-- <h2>about us</h2> --}}
+            <h1>Gethsemane Catholic Evangelical Outreach</h1>
             <div class="about-link-container">
                 <a href="{{route("contact")}}" class="contact-btn know-us">
                     know us better!
@@ -105,7 +105,7 @@
         <!-- this is about card 1 -->
         <div class="leader-card">
             <img src="{{asset('data/images/right-arrow.png')}}" alt="">
-            <h1>about us</h1>
+            <h1>OUR MISSION</h1>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quod laudantium necessitatibus ipsum molestiae?
             Modi quisquam nesciunt sed autem repellendus nulla.
@@ -114,7 +114,7 @@
         <!-- about card 2 -->
         <div class="leader-card bigger">
             <img src="{{asset('data/images/right-arrow.png')}}" alt="">
-            <h1 class="bigger-text">about us</h1>
+            <h1 class="bigger-text">PURPOSE OF THIS CHANNEL</h1>
             <P class="bigger-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quod laudantium necessitatibus ipsum molestiae?
@@ -124,7 +124,7 @@
         <!-- about card 3 -->
         <div class="leader-card">
             <img src="{{asset('data/images/right-arrow.png')}}" alt="">
-            <h1>about us</h1>
+            <h1>OUR VISION</h1>
             <P>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quod laudantium necessitatibus ipsum molestiae?

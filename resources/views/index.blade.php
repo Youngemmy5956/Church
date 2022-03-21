@@ -11,8 +11,8 @@
     <!-- this is the header section that contains the logo and the navigation bars   -->
     <header >
         <!-- this is the logo container -->
-        <div class="logo-container">
-            <img src="{{asset('data/images/images__10_-removebg-preview.png')}}" alt="" class="logo">
+        <div class="logo-container"><img src="{{asset('data/images/Frame.png')}}" alt="" class="logo">
+
         </div>
 
         <!-- this is the navigation bar  for the destop view -->
