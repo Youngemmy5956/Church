@@ -69,9 +69,9 @@
     <section class="landpage">
         <!-- this contains the text ov the landpage -->
         <div class="landpage-text-container">
-            <h3>welcome to church</h3>
+            <h3>welcome to Gesthemane</h3>
             <h1>become a part of god's family</h1>
-            <p>feel the presence of the lord in its fullness with the rest of the family</p>
+            <p>feel the presence of the lord in its fullness with the rest of the family and be blessed.</p>
             <!-- this is the learn more btn container -->
             <div class="landpage-btn-container">
                 <!-- learn more btn -->
