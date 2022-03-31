@@ -16,14 +16,14 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
 // Path: routes\web.php
 
 
-Route::get("/index", [HomeController::class, "index"])->name("index");
+// Route::get("/index", [HomeController::class, "index"])->name("index");
 Route::get("/contact", [HomeController::class, "contact"])->name("contact");
 Route::post("/contact/store", [ContactMeController::class, "store"])->name("contact.store");
 Route::get("/about", [HomeController::class, "about"])->name("about");
