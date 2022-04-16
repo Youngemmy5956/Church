@@ -73,7 +73,7 @@
             <div class="microphone-container for-landpage">
                 <img src="{{asset('data/images/mic2-removebg-preview.png')}}" alt="" class="micro-phone">
             </div>
-            <img src="{{asset('data/images/preacher.jpeg')}}" alt="" class="podcast-land-img">
+            <img src="{{asset('data/images/vc.jpeg')}}" alt="" class="podcast-land-img">
         </div>
         <div class="audio-section">
             <h1>audio:how to create a good relationship with god</h1>

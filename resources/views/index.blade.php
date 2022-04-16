@@ -169,16 +169,16 @@
         <div class="leaders-card-container">
             <!-- this is the pastors image card 1 -->
             <div class="leader-card">
-                <img src="{{asset('data/images/pastor5.png')}}" alt="">
+                <img src="{{asset('data/images/d.jpeg')}}" alt="">
             </div>
             <!-- 2 -->
             <div class="leader-card bigger">
-                <img src="{{asset('data/images/happy-diverse-business-people-making-deal_53876-159561.jpg')}}" alt="">
+                <img src="{{asset('data/images/df.jpeg')}}" alt="">
 
             </div>
             <!-- 3 -->
             <div class="leader-card">
-                <img src="{{asset('data/images/pastor6.png')}}" alt="">
+                <img src="{{asset('data/images/v.jpeg')}}" alt="">
             </div>
         </div>
         <!-- this is the worshio with us text  -->
